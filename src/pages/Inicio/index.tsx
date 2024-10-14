@@ -1,6 +1,7 @@
 import React from 'react';
 import Cardapio from 'data/Cardapio.json';
 import styles from './Inicio.module.scss';
+import stylesTema from 'styles/Tema.module.scss';
 
 export default function Inicio() {
     
@@ -9,7 +10,7 @@ export default function Inicio() {
     
   return (
     <section>
-      <h3 className={styles.titulo}>Recomendações da cozinha</h3>
+      <h3 className={stylesTema.titulo}>Recomendações da cozinha</h3>
         
       <div className={styles.recomendados}>
         {pratosRecomendados.map(item => (
